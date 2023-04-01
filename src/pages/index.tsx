@@ -8,7 +8,7 @@ const source = Source_Sans_3({ subsets: ['latin'] })
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
-  const workRef = useRef<HTMLElement | null>(null);
+  const workRef = useRef<HTMLOListElement | null>(null);
 
   const onWheel = (e: WheelEvent) => {
     if (workRef.current) {
@@ -39,8 +39,8 @@ export default function Home() {
           </nav>
         </header>
         <section className={styles.intro}>
-          <h1>Hi! I'm Paul.</h1>
-          <p>I'm a designer and technologist<br/>specializing in hardware and robots.</p>
+          <h1>Hi! I&apos;m Paul.</h1>
+          <p>I&apos;m a designer and technologist<br/>specializing in hardware and robots.</p>
         </section>
         <section className={styles.work}>
           <ol ref={workRef}>
